@@ -7,7 +7,3 @@ tqdm==4.67.3
 
 # Visualization
 matplotlib==3.10.8
-
-# Presentation generation (optional — only needed for build_presentation_v2.py)
-python-pptx==1.0.2
-lxml==6.0.2
