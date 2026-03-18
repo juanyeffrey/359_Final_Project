@@ -1,5 +1,5 @@
 {
-  "_comment": "Base configuration for a 4-condition GRPO experiment. Pass this to run_experiment.py via --config, or override individual fields with CLI flags.",
+  "_comment": "Base configuration for a 4-condition GRPO experiment. Reference for default hyperparameters — pass individual fields as CLI flags to run_experiment.py.",
 
   "tokenizer": "data/tokenizer",
   "sft_checkpoint": "models/instruction_<TIMESTAMP>/best_model.pt",

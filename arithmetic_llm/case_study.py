@@ -143,10 +143,10 @@ def verify_rewards(experiment_dir: str) -> None:
               f"{'(adaptive scheduler active ✓)' if has_phase else ''}")
 
         # avg_reward vs reward_rate divergence proves different reward scale
-        avg_r_first = first.get("avg_reward", "?")
-        rr_first    = first.get("reward_rate", "?")
-        avg_r_last  = last.get("avg_reward", "?")
-        rr_last     = last.get("reward_rate", "?")
+        avg_r_first = first.get("avg_reward", 0.0)
+        rr_first    = first.get("reward_rate", 0.0)
+        avg_r_last  = last.get("avg_reward", 0.0)
+        rr_last     = last.get("reward_rate", 0.0)
 
         print(f"\n  Step 1 — avg_reward={avg_r_first:.3f}  reward_rate={rr_first:.3f}  "
               f"gap={avg_r_first - rr_first:+.3f}")
